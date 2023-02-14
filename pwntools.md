@@ -69,6 +69,8 @@ interface makes it easy to, among other things, retarget an attack from a local
 binary to one running on an `ncat` server.
 
 #### Useful receive methods
+| Method                         | Description                                                |
+|--------------------------------|------------------------------------------------------------|
 | `.clean()`                     | Removes buffered data from a tube                          |
 | `.recv(numb, timeout)`         | Receives up to `numb` bytes or until `timeout is exceeded  |
 | `.recvuntil(delims)`           | Recieves until `delims` is seen. Returned value will include the specified `delims` |
@@ -76,6 +78,8 @@ binary to one running on an `ncat` server.
 | `.recvall()`                   | Recieves until `EOF` is recieved  |
 
 #### Useful send methods
+| Method                         | Description                         |
+|--------------------------------|-------------------------------------|
 | `.send(data)`                  | Sends byte string `data` to process |
 | `.sendline(data)`              | Sends byte string `data` with a newline afterwards |
 | `.sendafter(delim, data)`      | Sends byte string `data` after `delim` is recieved |
